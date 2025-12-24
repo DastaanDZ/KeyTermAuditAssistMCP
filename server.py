@@ -104,4 +104,4 @@ async def get_keyterm_details(keyterm: str):
 # Run
 # --------------------------------
 if __name__ == "__main__":
-    mcp.run(transport="http", port=8001)
+    mcp.run(transport="http", port=8000)
