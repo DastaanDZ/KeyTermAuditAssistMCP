@@ -22,7 +22,7 @@ BASE_URL_DETAILS = "https://keytermauditassistpython.onrender.com/keyterm"
 # Tool 1: Check Classification
 # --------------------------------
 @mcp.tool(
-    name="check-keyterm-classification",
+    name="check_keyterm_classification",
     description="Check system classified values to verify if an admin has changed them. Returns keyterm classification data including User Value and System Edit."
 )
 async def check_keyterm_classification(order_number: int, keyterm_code: str = None):
@@ -60,7 +60,7 @@ async def check_keyterm_classification(order_number: int, keyterm_code: str = No
 # Tool 2: Get Keyterm Details
 # --------------------------------
 @mcp.tool(
-    name="get-keyterm-definition-and-regex",
+    name="get_keyterm_definition_and_regex",
     description="Get keyterm information, calculation logic, and regex used for extraction based on section headers and paragraph text."
 )
 async def get_keyterm_details(keyterm: str):
